@@ -1,0 +1,35 @@
+[2024-02-29 14:37:23,731] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_redshift.crear_tabla_redshift scheduled__2022-10-08T03:00:00+00:00 [queued]>
+[2024-02-29 14:37:23,745] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_redshift.crear_tabla_redshift scheduled__2022-10-08T03:00:00+00:00 [queued]>
+[2024-02-29 14:37:23,746] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-29 14:37:23,747] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2024-02-29 14:37:23,747] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-29 14:37:23,771] {taskinstance.py:1397} INFO - Executing <Task(RedshiftSQLOperator): crear_tabla_redshift> on 2022-10-08 03:00:00+00:00
+[2024-02-29 14:37:23,779] {standard_task_runner.py:52} INFO - Started process 862 to run task
+[2024-02-29 14:37:23,784] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_con_conexion_redshift', 'crear_tabla_redshift', 'scheduled__2022-10-08T03:00:00+00:00', '--job-id', '118', '--raw', '--subdir', 'DAGS_FOLDER/dag_postgres_database.py', '--cfg-path', '/tmp/tmpmup0fgei', '--error-file', '/tmp/tmpsjlbkf9a']
+[2024-02-29 14:37:23,786] {standard_task_runner.py:80} INFO - Job 118: Subtask crear_tabla_redshift
+[2024-02-29 14:37:23,883] {task_command.py:371} INFO - Running <TaskInstance: dag_con_conexion_redshift.crear_tabla_redshift scheduled__2022-10-08T03:00:00+00:00 [running]> on host 85ed7e7789a6
+[2024-02-29 14:37:24,068] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Joaco
+AIRFLOW_CTX_DAG_ID=dag_con_conexion_redshift
+AIRFLOW_CTX_TASK_ID=crear_tabla_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-08T03:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-08T03:00:00+00:00
+[2024-02-29 14:37:24,070] {redshift_sql.py:76} INFO - Executing statement: 
+            create table if not exists fin_mundo(
+                dt date,
+                pais varchar(30)
+            )
+        
+[2024-02-29 14:37:24,088] {base.py:68} INFO - Using connection ID 'redshift_keys' for task execution.
+[2024-02-29 14:37:25,555] {dbapi.py:231} INFO - Running statement: 
+            create table if not exists fin_mundo(
+                dt date,
+                pais varchar(30)
+            )
+        , parameters: None
+[2024-02-29 14:37:26,126] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dag_con_conexion_redshift, task_id=crear_tabla_redshift, execution_date=20221008T030000, start_date=20240229T143723, end_date=20240229T143726
+[2024-02-29 14:37:26,188] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-02-29 14:37:26,431] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
