@@ -1,0 +1,70 @@
+[2024-02-29 14:35:14,177] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_redshift.insertar_en_tabla scheduled__2022-09-05T03:00:00+00:00 [queued]>
+[2024-02-29 14:35:14,236] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_redshift.insertar_en_tabla scheduled__2022-09-05T03:00:00+00:00 [queued]>
+[2024-02-29 14:35:14,240] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-29 14:35:14,241] {taskinstance.py:1377} INFO - Starting attempt 3 of 6
+[2024-02-29 14:35:14,245] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-29 14:35:14,300] {taskinstance.py:1397} INFO - Executing <Task(RedshiftSQLOperator): insertar_en_tabla> on 2022-09-05 03:00:00+00:00
+[2024-02-29 14:35:14,305] {standard_task_runner.py:52} INFO - Started process 683 to run task
+[2024-02-29 14:35:14,329] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_con_conexion_redshift', 'insertar_en_tabla', 'scheduled__2022-09-05T03:00:00+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/dag_postgres_database.py', '--cfg-path', '/tmp/tmpqp0mpd5x', '--error-file', '/tmp/tmp7sk8zqxk']
+[2024-02-29 14:35:14,331] {standard_task_runner.py:80} INFO - Job 59: Subtask insertar_en_tabla
+[2024-02-29 14:35:14,560] {task_command.py:371} INFO - Running <TaskInstance: dag_con_conexion_redshift.insertar_en_tabla scheduled__2022-09-05T03:00:00+00:00 [running]> on host 85ed7e7789a6
+[2024-02-29 14:35:14,746] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Joaco
+AIRFLOW_CTX_DAG_ID=dag_con_conexion_redshift
+AIRFLOW_CTX_TASK_ID=insertar_en_tabla
+AIRFLOW_CTX_EXECUTION_DATE=2022-09-05T03:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=3
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-09-05T03:00:00+00:00
+[2024-02-29 14:35:14,752] {redshift_sql.py:76} INFO - Executing statement: 
+            insert into fin_mundo (dt,pais) values ('12-12-2025','Colombia');
+            insert into fin_mundo (dt,pais) values ('15-08-2035','Brasil');
+            insert into fin_mundo (dt,pais) values ('21-09-2030','Argentina');
+            insert into fin_mundo (dt,pais) values ('13-07-2045','Chile');
+            insert into fin_mundo (dt,pais) values ('17-11-2028','Ecuador');
+            insert into fin_mundo (dt,pais) values ('19-03-2032','Peru');
+            insert into fin_mundo (dt,pais) values ('18-08-2026','Uruguay');
+            insert into fin_mundo (dt,pais) values ('22-05-2037','Paraguay');
+            insert into fin_mundo (dt,pais) values ('12-12-2080','Venezuela');
+            insert into fin_mundo (dt,pais) values ('12-12-2071','Mexico');
+        
+[2024-02-29 14:35:14,779] {base.py:68} INFO - Using connection ID 'redshift_keys' for task execution.
+[2024-02-29 14:35:16,135] {dbapi.py:231} INFO - Running statement: 
+            insert into fin_mundo (dt,pais) values ('12-12-2025','Colombia');
+            insert into fin_mundo (dt,pais) values ('15-08-2035','Brasil');
+            insert into fin_mundo (dt,pais) values ('21-09-2030','Argentina');
+            insert into fin_mundo (dt,pais) values ('13-07-2045','Chile');
+            insert into fin_mundo (dt,pais) values ('17-11-2028','Ecuador');
+            insert into fin_mundo (dt,pais) values ('19-03-2032','Peru');
+            insert into fin_mundo (dt,pais) values ('18-08-2026','Uruguay');
+            insert into fin_mundo (dt,pais) values ('22-05-2037','Paraguay');
+            insert into fin_mundo (dt,pais) values ('12-12-2080','Venezuela');
+            insert into fin_mundo (dt,pais) values ('12-12-2071','Mexico');
+        , parameters: None
+[2024-02-29 14:35:16,301] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/core.py", line 1631, in execute
+    ps = cache["ps"][key]
+KeyError: ("\n            insert into fin_mundo (dt,pais) values ('12-12-2025','Colombia');\n            insert into fin_mundo (dt,pais) values ('15-08-2035','Brasil');\n            insert into fin_mundo (dt,pais) values ('21-09-2030','Argentina');\n            insert into fin_mundo (dt,pais) values ('13-07-2045','Chile');\n            insert into fin_mundo (dt,pais) values ('17-11-2028','Ecuador');\n            insert into fin_mundo (dt,pais) values ('19-03-2032','Peru');\n            insert into fin_mundo (dt,pais) values ('18-08-2026','Uruguay');\n            insert into fin_mundo (dt,pais) values ('22-05-2037','Paraguay');\n            insert into fin_mundo (dt,pais) values ('12-12-2080','Venezuela');\n            insert into fin_mundo (dt,pais) values ('12-12-2071','Mexico');\n        ", ())
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/operators/redshift_sql.py", line 78, in execute
+    hook.run(self.sql, autocommit=self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 211, in run
+    self._run_command(cur, sql_statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/hooks/dbapi.py", line 235, in _run_command
+    cur.execute(sql_statement)
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/cursor.py", line 240, in execute
+    self._c.execute(self, operation, args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/core.py", line 1701, in execute
+    self.handle_messages(cursor)
+  File "/home/airflow/.local/lib/python3.7/site-packages/redshift_connector/core.py", line 1969, in handle_messages
+    raise self.error
+redshift_connector.error.ProgrammingError: {'S': 'ERROR', 'C': '42601', 'M': 'cannot insert multiple commands into a prepared statement', 'F': '../src/pg/src/backend/tcop/postgres.c', 'L': '4157', 'R': 'exec_parse_message'}
+[2024-02-29 14:35:16,307] {taskinstance.py:1420} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_con_conexion_redshift, task_id=insertar_en_tabla, execution_date=20220905T030000, start_date=20240229T143514, end_date=20240229T143516
+[2024-02-29 14:35:16,317] {standard_task_runner.py:97} ERROR - Failed to execute job 59 for task insertar_en_tabla ({'S': 'ERROR', 'C': '42601', 'M': 'cannot insert multiple commands into a prepared statement', 'F': '../src/pg/src/backend/tcop/postgres.c', 'L': '4157', 'R': 'exec_parse_message'}; 683)
+[2024-02-29 14:35:16,345] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-02-29 14:35:16,365] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
