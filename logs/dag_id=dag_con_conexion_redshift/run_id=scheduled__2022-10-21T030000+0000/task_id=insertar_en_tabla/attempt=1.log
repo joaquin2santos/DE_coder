@@ -1,0 +1,34 @@
+[2024-02-29 14:37:35,440] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_redshift.insertar_en_tabla scheduled__2022-10-21T03:00:00+00:00 [queued]>
+[2024-02-29 14:37:35,461] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: dag_con_conexion_redshift.insertar_en_tabla scheduled__2022-10-21T03:00:00+00:00 [queued]>
+[2024-02-29 14:37:35,468] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-29 14:37:35,472] {taskinstance.py:1377} INFO - Starting attempt 1 of 6
+[2024-02-29 14:37:35,475] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-02-29 14:37:35,535] {taskinstance.py:1397} INFO - Executing <Task(RedshiftSQLOperator): insertar_en_tabla> on 2022-10-21 03:00:00+00:00
+[2024-02-29 14:37:35,544] {standard_task_runner.py:52} INFO - Started process 930 to run task
+[2024-02-29 14:37:35,554] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'dag_con_conexion_redshift', 'insertar_en_tabla', 'scheduled__2022-10-21T03:00:00+00:00', '--job-id', '149', '--raw', '--subdir', 'DAGS_FOLDER/dag_postgres_database.py', '--cfg-path', '/tmp/tmpdi06zyt0', '--error-file', '/tmp/tmpvisqbey5']
+[2024-02-29 14:37:35,557] {standard_task_runner.py:80} INFO - Job 149: Subtask insertar_en_tabla
+[2024-02-29 14:37:35,725] {task_command.py:371} INFO - Running <TaskInstance: dag_con_conexion_redshift.insertar_en_tabla scheduled__2022-10-21T03:00:00+00:00 [running]> on host 85ed7e7789a6
+[2024-02-29 14:37:35,998] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Joaco
+AIRFLOW_CTX_DAG_ID=dag_con_conexion_redshift
+AIRFLOW_CTX_TASK_ID=insertar_en_tabla
+AIRFLOW_CTX_EXECUTION_DATE=2022-10-21T03:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-10-21T03:00:00+00:00
+[2024-02-29 14:37:35,999] {redshift_sql.py:76} INFO - Executing statement: 
+            insert into fin_mundo (dt,pais) values ('12-12-2025','Colombia');
+        
+        
+[2024-02-29 14:37:36,032] {base.py:68} INFO - Using connection ID 'redshift_keys' for task execution.
+[2024-02-29 14:37:37,546] {dbapi.py:231} INFO - Running statement: 
+            insert into fin_mundo (dt,pais) values ('12-12-2025','Colombia');
+        
+        , parameters: None
+[2024-02-29 14:37:38,039] {dbapi.py:239} INFO - Rows affected: 1
+[2024-02-29 14:37:38,071] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dag_con_conexion_redshift, task_id=insertar_en_tabla, execution_date=20221021T030000, start_date=20240229T143735, end_date=20240229T143738
+[2024-02-29 14:37:38,130] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-02-29 14:37:38,174] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-02-29 14:37:38,201] {dagrun.py:564} INFO - Marking run <DagRun dag_con_conexion_redshift @ 2022-10-21 03:00:00+00:00: scheduled__2022-10-21T03:00:00+00:00, externally triggered: False> successful
+[2024-02-29 14:37:38,202] {dagrun.py:624} INFO - DagRun Finished: dag_id=dag_con_conexion_redshift, execution_date=2022-10-21 03:00:00+00:00, run_id=scheduled__2022-10-21T03:00:00+00:00, run_start_date=2024-02-29 14:37:31.952928+00:00, run_end_date=2024-02-29 14:37:38.202188+00:00, run_duration=6.24926, state=success, external_trigger=False, run_type=scheduled, data_interval_start=2022-10-21 03:00:00+00:00, data_interval_end=2022-10-22 03:00:00+00:00, dag_hash=7bdd9539ac4b929d3b3201b4c50b4938
