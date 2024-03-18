@@ -1,0 +1,24 @@
+[2024-03-18 23:56:32,761] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: opcion_2.conectar_redshift scheduled__2024-03-17T22:36:15.609958+00:00 [queued]>
+[2024-03-18 23:56:32,772] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: opcion_2.conectar_redshift scheduled__2024-03-17T22:36:15.609958+00:00 [queued]>
+[2024-03-18 23:56:32,772] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-18 23:56:32,773] {taskinstance.py:1377} INFO - Starting attempt 2 of 3
+[2024-03-18 23:56:32,774] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-03-18 23:56:32,792] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): conectar_redshift> on 2024-03-17 22:36:15.609958+00:00
+[2024-03-18 23:56:32,797] {standard_task_runner.py:52} INFO - Started process 368 to run task
+[2024-03-18 23:56:32,799] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'opcion_2', 'conectar_redshift', 'scheduled__2024-03-17T22:36:15.609958+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/tareas2.py', '--cfg-path', '/tmp/tmpdnweoa9k', '--error-file', '/tmp/tmp69r0rpwv']
+[2024-03-18 23:56:32,801] {standard_task_runner.py:80} INFO - Job 29: Subtask conectar_redshift
+[2024-03-18 23:56:32,870] {task_command.py:371} INFO - Running <TaskInstance: opcion_2.conectar_redshift scheduled__2024-03-17T22:36:15.609958+00:00 [running]> on host 1ce5256cfda3
+[2024-03-18 23:56:32,943] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=opcion_2
+AIRFLOW_CTX_TASK_ID=conectar_redshift
+AIRFLOW_CTX_EXECUTION_DATE=2024-03-17T22:36:15.609958+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-03-17T22:36:15.609958+00:00
+[2024-03-18 23:56:34,075] {logging_mixin.py:115} INFO - Conectado a Redshift con éxito!
+[2024-03-18 23:56:34,588] {python.py:173} INFO - Done. Returned value was: None
+[2024-03-18 23:56:34,603] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=opcion_2, task_id=conectar_redshift, execution_date=20240317T223615, start_date=20240318T235632, end_date=20240318T235634
+[2024-03-18 23:56:34,628] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-03-18 23:56:34,660] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
