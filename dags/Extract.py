@@ -19,6 +19,13 @@ contraseña_bd = Variable.get('pasword')
 host = Variable.get('host')
 database = Variable.get('database')
 
+conn = psycopg2.connect(
+            host=host,
+            dbname=database,
+            user=usuario,
+            password=contraseña_bd,
+            port='5439'
+        )
 def extraer_data():
     #crear llamada a la api
     client_credentials_manager= SpotifyClientCredentials(client_id=id_client, client_secret= secret)
@@ -148,3 +155,72 @@ def cargar_datos(df):
         cur.close()
         conn.close()
 
+def extraer_datos2():
+    #crear llamada a la api
+    client_credentials_manager= SpotifyClientCredentials(client_id=id_client, client_secret= secret)
+    sp= spotipy.Spotify(client_credentials_manager=client_credentials_manager)
+
+    #buscar la info en la api
+    busqueda = sp.search(q='podcast 2024', type='track', limit=50) 
+    #variable con la fecha de extraccion
+    now = datetime.date.today().strftime('%Y-%m-%d')
+    #columnas para guardar la info 
+    columnas = {'Id': [],'Artista': [], 'Podcast': [],'Duracion': [], 'Genero': [],'Album': [], 'Album_img': [], 'Episodios': [], 'Popularidad': [], 'Fecha_Lanzamiento': [],'Fecha_Modificacion': []}
+    #acceder a la info
+    for track in busqueda['tracks']['items']:
+        id = track['id']
+        artist_name = track['artists'][0]['name']
+        artist_id = track['artists'][0]['id']
+        track_name = track['name']
+        duration = track['duration_ms']
+        track_id = track['id']
+        album_group = track['album']['name']
+        album_img = track['album']['images'][0]['url'] 
+        album_cont = track['album']['total_tracks']
+        track_genre =track.get("genres")
+        track_popularity = track['popularity']
+        track_year = track['album']['release_date']
+        #sacar las comillas 
+        track_name = track_name.replace("'", "")
+        album_group = album_group.replace("'", "")
+        columnas['Id'].append(id)
+        columnas['Artista'].append(artist_name)
+        columnas['Podcast'].append(track_name)
+        columnas['Duracion'].append(duration)
+        columnas['Album'].append(album_group)
+        columnas['Album_img'].append(album_img)
+        columnas['Episodios'].append(album_cont)
+        columnas['Genero'].append(track_genre)
+        columnas['Popularidad'].append(track_popularity)
+        columnas['Fecha_Lanzamiento'].append(track_year)
+        columnas['Fecha_Modificacion'].append(now)
+
+    #crear el dataframe
+    df = pd.DataFrame(columnas)
+    #sacar duplicadas
+    df.drop_duplicates(subset=['Artista', 'Podcast','Album'], keep='first', inplace=True)
+    #llenar los nulos que no tenemos info
+    df['Genero'].fillna('Sin Dato', inplace=True)
+    df['Genero'].replace('', 'Sin Dato', inplace=True)
+
+    #filtrar para cargar solo valores positivos en la duracion
+    df = df.query('Duracion > 0')
+    #chequear los formatos de fecha 
+    df['Fecha_Lanzamiento'] = pd.to_datetime(df['Fecha_Lanzamiento'], format='%Y-%m-%d')
+    df['Fecha_Lanzamiento'] = df['Fecha_Lanzamiento'].dt.strftime('%Y-%m-%d')
+      
+    #insertar los valores en la tabla
+    with conn.cursor() as cur:
+        execute_values(
+            cur,
+            '''
+            INSERT INTO  podcast_2024 (Id, Artista, Podcast, Duracion, Genero, Album, Album_img, Episodios, Popularidad, Fecha_Lanzamiento, Fecha_Modificacion)
+            VALUES %s
+            ''',
+            [tuple(row) for row in df.values],
+            page_size=len(df)
+        )
+        conn.commit()
+        #cerrar la conexion
+        cur.close()
+        conn.close()
