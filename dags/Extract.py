@@ -8,6 +8,11 @@ import json
 import psycopg2
 from psycopg2.extras import execute_values
 from airflow.models import  Variable
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+
 # cargar el archivo JSON con las claves
 #with open(r'C:\Users\BANGHO\Desktop\botsito\accesos_coderhouse.json','r') as f:
  #   datos = json.load(f)
@@ -18,6 +23,13 @@ usuario = Variable.get('usuario')
 contraseña_bd = Variable.get('pasword')
 host = Variable.get('host')
 database = Variable.get('database')
+
+sender_email = Variable.get("gmail_user")
+password= Variable.get("gmail_key")
+sender_email = Variable.get("gmail_user")
+smtp_server = Variable.get("smtp_server")
+smtp_port = 587
+
 
 conn = psycopg2.connect(
             host=host,
@@ -224,3 +236,24 @@ def extraer_datos2():
         #cerrar la conexion
         cur.close()
         conn.close()
+
+
+def alerta_mail():
+    try:
+        subject = 'Carga de datos'
+        body_text = 'El proceso de ETL de Podcast 2024 termino.'
+        msg = MIMEMultipart()
+
+        msg['From'] = sender_email
+        msg['To'] = sender_email
+        msg['Subject'] = subject
+        msg.attach(MIMEText(body_text, 'plain'))
+        with smtplib.SMTP(smtp_server, smtp_port) as server:
+            server.starttls()
+            server.login(sender_email, password)
+            server.send_message(msg)
+        print('El email fue enviado correctamente.')
+
+    except Exception as exception:
+        print(exception)
+        print('El mail reboto')

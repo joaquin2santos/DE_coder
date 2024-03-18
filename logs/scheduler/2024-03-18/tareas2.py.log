@@ -100,3 +100,383 @@ NameError: name 'task_3' is not defined
 [2024-03-18 22:37:05,146] {logging_mixin.py:115} INFO - [2024-03-18 22:37:05,146] {dag.py:2420} INFO - Sync 1 DAGs
 [2024-03-18 22:37:05,168] {logging_mixin.py:115} INFO - [2024-03-18 22:37:05,168] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
 [2024-03-18 22:37:05,194] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.592 seconds
+[2024-03-18 23:53:51,090] {processor.py:153} INFO - Started process (PID=177) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:53:51,092] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:53:51,092] {logging_mixin.py:115} INFO - [2024-03-18 23:53:51,092] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:53:52,190] {logging_mixin.py:115} INFO - [2024-03-18 23:53:52,180] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 27, in <module>
+    sender_email = Variable.get("gmail_user")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_user does not exist'
+[2024-03-18 23:53:52,192] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:53:52,201] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.117 seconds
+[2024-03-18 23:54:02,297] {processor.py:153} INFO - Started process (PID=190) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:02,298] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:54:02,299] {logging_mixin.py:115} INFO - [2024-03-18 23:54:02,299] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:02,727] {logging_mixin.py:115} INFO - [2024-03-18 23:54:02,714] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 27, in <module>
+    sender_email = Variable.get("gmail_user")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_user does not exist'
+[2024-03-18 23:54:02,730] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:02,742] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.448 seconds
+[2024-03-18 23:54:12,878] {processor.py:153} INFO - Started process (PID=202) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:12,881] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:54:12,882] {logging_mixin.py:115} INFO - [2024-03-18 23:54:12,882] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:13,284] {logging_mixin.py:115} INFO - [2024-03-18 23:54:13,279] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 27, in <module>
+    sender_email = Variable.get("gmail_user")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_user does not exist'
+[2024-03-18 23:54:13,285] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:13,320] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.450 seconds
+[2024-03-18 23:54:23,454] {processor.py:153} INFO - Started process (PID=214) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:23,455] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:54:23,457] {logging_mixin.py:115} INFO - [2024-03-18 23:54:23,457] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:23,837] {logging_mixin.py:115} INFO - [2024-03-18 23:54:23,826] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 27, in <module>
+    sender_email = Variable.get("gmail_user")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_user does not exist'
+[2024-03-18 23:54:23,839] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:23,849] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.398 seconds
+[2024-03-18 23:54:33,977] {processor.py:153} INFO - Started process (PID=226) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:33,978] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:54:33,979] {logging_mixin.py:115} INFO - [2024-03-18 23:54:33,979] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:34,400] {logging_mixin.py:115} INFO - [2024-03-18 23:54:34,391] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 27, in <module>
+    sender_email = Variable.get("gmail_user")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_user does not exist'
+[2024-03-18 23:54:34,402] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:34,413] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.439 seconds
+[2024-03-18 23:54:44,545] {processor.py:153} INFO - Started process (PID=238) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:44,547] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:54:44,548] {logging_mixin.py:115} INFO - [2024-03-18 23:54:44,548] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:44,963] {logging_mixin.py:115} INFO - [2024-03-18 23:54:44,950] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 27, in <module>
+    sender_email = Variable.get("gmail_user")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_user does not exist'
+[2024-03-18 23:54:44,964] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:44,973] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.430 seconds
+[2024-03-18 23:54:55,109] {processor.py:153} INFO - Started process (PID=250) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:55,110] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:54:55,112] {logging_mixin.py:115} INFO - [2024-03-18 23:54:55,112] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:55,488] {logging_mixin.py:115} INFO - [2024-03-18 23:54:55,477] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 27, in <module>
+    sender_email = Variable.get("gmail_user")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_user does not exist'
+[2024-03-18 23:54:55,489] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:54:55,503] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.396 seconds
+[2024-03-18 23:55:05,621] {processor.py:153} INFO - Started process (PID=262) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:05,623] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:55:05,624] {logging_mixin.py:115} INFO - [2024-03-18 23:55:05,624] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:06,035] {logging_mixin.py:115} INFO - [2024-03-18 23:55:06,022] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 27, in <module>
+    sender_email = Variable.get("gmail_user")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_user does not exist'
+[2024-03-18 23:55:06,037] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:06,049] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.430 seconds
+[2024-03-18 23:55:16,166] {processor.py:153} INFO - Started process (PID=274) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:16,167] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:55:16,168] {logging_mixin.py:115} INFO - [2024-03-18 23:55:16,168] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:16,526] {logging_mixin.py:115} INFO - [2024-03-18 23:55:16,512] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 27, in <module>
+    sender_email = Variable.get("gmail_user")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_user does not exist'
+[2024-03-18 23:55:16,528] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:16,543] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.380 seconds
+[2024-03-18 23:55:26,674] {processor.py:153} INFO - Started process (PID=286) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:26,675] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:55:26,677] {logging_mixin.py:115} INFO - [2024-03-18 23:55:26,677] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:27,054] {logging_mixin.py:115} INFO - [2024-03-18 23:55:27,045] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 27, in <module>
+    sender_email = Variable.get("gmail_user")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_user does not exist'
+[2024-03-18 23:55:27,055] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:27,063] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.392 seconds
+[2024-03-18 23:55:37,197] {processor.py:153} INFO - Started process (PID=298) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:37,198] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:55:37,199] {logging_mixin.py:115} INFO - [2024-03-18 23:55:37,199] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:37,562] {logging_mixin.py:115} INFO - [2024-03-18 23:55:37,552] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 27, in <module>
+    sender_email = Variable.get("gmail_user")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_user does not exist'
+[2024-03-18 23:55:37,564] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:37,576] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.382 seconds
+[2024-03-18 23:55:47,707] {processor.py:153} INFO - Started process (PID=310) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:47,708] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:55:47,709] {logging_mixin.py:115} INFO - [2024-03-18 23:55:47,709] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:48,072] {logging_mixin.py:115} INFO - [2024-03-18 23:55:48,061] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 27, in <module>
+    sender_email = Variable.get("gmail_user")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_user does not exist'
+[2024-03-18 23:55:48,073] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:48,085] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.381 seconds
+[2024-03-18 23:55:58,208] {processor.py:153} INFO - Started process (PID=322) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:58,209] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:55:58,210] {logging_mixin.py:115} INFO - [2024-03-18 23:55:58,210] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:58,673] {logging_mixin.py:115} INFO - [2024-03-18 23:55:58,667] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 30, in <module>
+    smtp_server = Variable.get("smtp_server")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable smtp_server does not exist'
+[2024-03-18 23:55:58,674] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:55:58,681] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.477 seconds
+[2024-03-18 23:56:08,797] {processor.py:153} INFO - Started process (PID=334) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:08,798] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:56:08,799] {logging_mixin.py:115} INFO - [2024-03-18 23:56:08,799] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:10,546] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:10,600] {logging_mixin.py:115} INFO - [2024-03-18 23:56:10,600] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 23:56:10,620] {logging_mixin.py:115} INFO - [2024-03-18 23:56:10,620] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 23:56:10,642] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.848 seconds
+[2024-03-18 23:56:20,731] {processor.py:153} INFO - Started process (PID=346) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:20,732] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:56:20,734] {logging_mixin.py:115} INFO - [2024-03-18 23:56:20,734] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:22,298] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:22,305] {logging_mixin.py:115} INFO - [2024-03-18 23:56:22,305] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 23:56:22,320] {logging_mixin.py:115} INFO - [2024-03-18 23:56:22,320] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 23:56:22,343] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.614 seconds
+[2024-03-18 23:56:32,478] {processor.py:153} INFO - Started process (PID=360) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:32,479] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:56:32,480] {logging_mixin.py:115} INFO - [2024-03-18 23:56:32,480] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:34,103] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:34,108] {logging_mixin.py:115} INFO - [2024-03-18 23:56:34,108] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 23:56:34,123] {logging_mixin.py:115} INFO - [2024-03-18 23:56:34,123] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 23:56:34,138] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.663 seconds
+[2024-03-18 23:56:44,273] {processor.py:153} INFO - Started process (PID=379) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:44,274] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:56:44,275] {logging_mixin.py:115} INFO - [2024-03-18 23:56:44,275] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:46,179] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:46,191] {logging_mixin.py:115} INFO - [2024-03-18 23:56:46,190] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 23:56:46,211] {logging_mixin.py:115} INFO - [2024-03-18 23:56:46,210] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 23:56:46,225] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.955 seconds
+[2024-03-18 23:56:56,343] {processor.py:153} INFO - Started process (PID=395) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:56,344] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:56:56,344] {logging_mixin.py:115} INFO - [2024-03-18 23:56:56,344] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:57,868] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:56:57,884] {logging_mixin.py:115} INFO - [2024-03-18 23:56:57,883] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 23:56:57,909] {logging_mixin.py:115} INFO - [2024-03-18 23:56:57,909] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 23:56:57,931] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.590 seconds
+[2024-03-18 23:57:08,036] {processor.py:153} INFO - Started process (PID=407) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:08,038] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:57:08,039] {logging_mixin.py:115} INFO - [2024-03-18 23:57:08,039] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:08,425] {logging_mixin.py:115} INFO - [2024-03-18 23:57:08,408] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 28, in <module>
+    password= Variable.get("gmail_key")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_key does not exist'
+[2024-03-18 23:57:08,429] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:08,439] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.405 seconds
+[2024-03-18 23:57:18,548] {processor.py:153} INFO - Started process (PID=419) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:18,549] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:57:18,550] {logging_mixin.py:115} INFO - [2024-03-18 23:57:18,550] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:18,924] {logging_mixin.py:115} INFO - [2024-03-18 23:57:18,914] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 28, in <module>
+    password= Variable.get("gmail_key")
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable gmail_key does not exist'
+[2024-03-18 23:57:18,926] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:18,935] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.391 seconds
+[2024-03-18 23:57:28,998] {processor.py:153} INFO - Started process (PID=427) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:28,999] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:57:29,001] {logging_mixin.py:115} INFO - [2024-03-18 23:57:29,001] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:30,582] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:30,595] {logging_mixin.py:115} INFO - [2024-03-18 23:57:30,595] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 23:57:30,610] {logging_mixin.py:115} INFO - [2024-03-18 23:57:30,610] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 23:57:30,629] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.633 seconds
+[2024-03-18 23:57:40,761] {processor.py:153} INFO - Started process (PID=439) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:40,762] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:57:40,764] {logging_mixin.py:115} INFO - [2024-03-18 23:57:40,764] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:42,292] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:42,304] {logging_mixin.py:115} INFO - [2024-03-18 23:57:42,304] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 23:57:42,321] {logging_mixin.py:115} INFO - [2024-03-18 23:57:42,320] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 23:57:42,332] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.574 seconds
+[2024-03-18 23:57:52,468] {processor.py:153} INFO - Started process (PID=451) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:52,469] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:57:52,470] {logging_mixin.py:115} INFO - [2024-03-18 23:57:52,470] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:54,224] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:57:54,234] {logging_mixin.py:115} INFO - [2024-03-18 23:57:54,234] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 23:57:54,248] {logging_mixin.py:115} INFO - [2024-03-18 23:57:54,248] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 23:57:54,261] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.800 seconds
+[2024-03-18 23:58:04,331] {processor.py:153} INFO - Started process (PID=463) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:58:04,332] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:58:04,334] {logging_mixin.py:115} INFO - [2024-03-18 23:58:04,334] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:58:04,700] {logging_mixin.py:115} INFO - [2024-03-18 23:58:04,689] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 23, in <module>
+    contraseña_bd = Variable.get('pasword')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable pasword does not exist'
+[2024-03-18 23:58:04,701] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:58:04,714] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.386 seconds
+[2024-03-18 23:58:14,856] {processor.py:153} INFO - Started process (PID=475) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:58:14,857] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:58:14,859] {logging_mixin.py:115} INFO - [2024-03-18 23:58:14,859] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:58:15,250] {logging_mixin.py:115} INFO - [2024-03-18 23:58:15,239] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 23, in <module>
+    contraseña_bd = Variable.get('pasword')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable pasword does not exist'
+[2024-03-18 23:58:15,251] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:58:15,261] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.407 seconds
+[2024-03-18 23:58:25,402] {processor.py:153} INFO - Started process (PID=487) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 23:58:25,404] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 23:58:25,405] {logging_mixin.py:115} INFO - [2024-03-18 23:58:25,405] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:58:25,822] {logging_mixin.py:115} INFO - [2024-03-18 23:58:25,810] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 7, in <module>
+    from  Extract import  conexion_db,  extraer_datos2, alerta_mail
+  File "/opt/airflow/dags/Extract.py", line 23, in <module>
+    contraseña_bd = Variable.get('pasword')
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/variable.py", line 138, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable pasword does not exist'
+[2024-03-18 23:58:25,825] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 23:58:25,837] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 0.438 seconds

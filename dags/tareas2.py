@@ -4,7 +4,7 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
 import os
-from  Extract import extraer_data, conexion_db, cargar_datos, extraer_datos2
+from  Extract import  conexion_db,  extraer_datos2, alerta_mail
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
@@ -38,6 +38,13 @@ task_2 = PythonOperator(
 )
 
 #agregar alerta email
+task_3= PythonOperator(
+    task_id='mandar_mail',
+    python_callable= alerta_mail,
+    dag=ingestion_dag,
+    provide_context=True
+)
+task_1 >> task_2 >> task_3
 
 
 
