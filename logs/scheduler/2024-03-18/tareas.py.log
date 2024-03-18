@@ -1,0 +1,63 @@
+[2024-03-18 22:35:28,197] {processor.py:153} INFO - Started process (PID=182) to work on /opt/airflow/dags/tareas.py
+[2024-03-18 22:35:28,198] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas.py for tasks to queue
+[2024-03-18 22:35:28,198] {logging_mixin.py:115} INFO - [2024-03-18 22:35:28,198] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas.py
+[2024-03-18 22:35:30,584] {processor.py:651} INFO - DAG(s) dict_keys(['ingestar_data']) retrieved from /opt/airflow/dags/tareas.py
+[2024-03-18 22:35:30,612] {logging_mixin.py:115} INFO - [2024-03-18 22:35:30,612] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:35:30,638] {logging_mixin.py:115} INFO - [2024-03-18 22:35:30,638] {dag.py:2972} INFO - Setting next_dagrun for ingestar_data to 2024-03-17T22:35:30.638358+00:00, run_after=2024-03-18T22:35:30.638358+00:00
+[2024-03-18 22:35:30,651] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas.py took 2.458 seconds
+[2024-03-18 22:35:40,720] {processor.py:153} INFO - Started process (PID=193) to work on /opt/airflow/dags/tareas.py
+[2024-03-18 22:35:40,720] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas.py for tasks to queue
+[2024-03-18 22:35:40,722] {logging_mixin.py:115} INFO - [2024-03-18 22:35:40,722] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas.py
+[2024-03-18 22:35:42,247] {processor.py:651} INFO - DAG(s) dict_keys(['ingestar_data']) retrieved from /opt/airflow/dags/tareas.py
+[2024-03-18 22:35:42,266] {logging_mixin.py:115} INFO - [2024-03-18 22:35:42,265] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:35:42,294] {logging_mixin.py:115} INFO - [2024-03-18 22:35:42,293] {dag.py:2972} INFO - Setting next_dagrun for ingestar_data to 2024-03-17T22:35:42.293614+00:00, run_after=2024-03-18T22:35:42.293614+00:00
+[2024-03-18 22:35:42,315] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas.py took 1.599 seconds
+[2024-03-18 22:35:52,415] {processor.py:153} INFO - Started process (PID=205) to work on /opt/airflow/dags/tareas.py
+[2024-03-18 22:35:52,416] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas.py for tasks to queue
+[2024-03-18 22:35:52,417] {logging_mixin.py:115} INFO - [2024-03-18 22:35:52,417] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas.py
+[2024-03-18 22:35:54,004] {processor.py:651} INFO - DAG(s) dict_keys(['ingestar_data']) retrieved from /opt/airflow/dags/tareas.py
+[2024-03-18 22:35:54,020] {logging_mixin.py:115} INFO - [2024-03-18 22:35:54,020] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:35:54,036] {logging_mixin.py:115} INFO - [2024-03-18 22:35:54,036] {dag.py:2972} INFO - Setting next_dagrun for ingestar_data to 2024-03-17T22:35:54.036257+00:00, run_after=2024-03-18T22:35:54.036257+00:00
+[2024-03-18 22:35:54,052] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas.py took 1.639 seconds
+[2024-03-18 22:36:04,170] {processor.py:153} INFO - Started process (PID=218) to work on /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:04,171] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas.py for tasks to queue
+[2024-03-18 22:36:04,172] {logging_mixin.py:115} INFO - [2024-03-18 22:36:04,172] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:05,837] {processor.py:651} INFO - DAG(s) dict_keys(['ingestar_data']) retrieved from /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:05,853] {logging_mixin.py:115} INFO - [2024-03-18 22:36:05,853] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:36:05,874] {logging_mixin.py:115} INFO - [2024-03-18 22:36:05,874] {dag.py:2972} INFO - Setting next_dagrun for ingestar_data to 2024-03-17T22:36:05.874158+00:00, run_after=2024-03-18T22:36:05.874158+00:00
+[2024-03-18 22:36:05,889] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas.py took 1.722 seconds
+[2024-03-18 22:36:15,999] {processor.py:153} INFO - Started process (PID=233) to work on /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:16,000] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas.py for tasks to queue
+[2024-03-18 22:36:16,001] {logging_mixin.py:115} INFO - [2024-03-18 22:36:16,001] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:17,641] {processor.py:651} INFO - DAG(s) dict_keys(['ingestar_data']) retrieved from /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:17,657] {logging_mixin.py:115} INFO - [2024-03-18 22:36:17,657] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:36:17,675] {logging_mixin.py:115} INFO - [2024-03-18 22:36:17,675] {dag.py:2972} INFO - Setting next_dagrun for ingestar_data to 2024-03-17T22:36:17.675311+00:00, run_after=2024-03-18T22:36:17.675311+00:00
+[2024-03-18 22:36:17,692] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas.py took 1.696 seconds
+[2024-03-18 22:36:27,811] {processor.py:153} INFO - Started process (PID=251) to work on /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:27,812] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas.py for tasks to queue
+[2024-03-18 22:36:27,813] {logging_mixin.py:115} INFO - [2024-03-18 22:36:27,813] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:29,399] {processor.py:651} INFO - DAG(s) dict_keys(['ingestar_data']) retrieved from /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:29,411] {logging_mixin.py:115} INFO - [2024-03-18 22:36:29,411] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:36:29,424] {logging_mixin.py:115} INFO - [2024-03-18 22:36:29,424] {dag.py:2972} INFO - Setting next_dagrun for ingestar_data to 2024-03-17T22:36:29.424133+00:00, run_after=2024-03-18T22:36:29.424133+00:00
+[2024-03-18 22:36:29,444] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas.py took 1.636 seconds
+[2024-03-18 22:36:39,578] {processor.py:153} INFO - Started process (PID=263) to work on /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:39,579] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas.py for tasks to queue
+[2024-03-18 22:36:39,580] {logging_mixin.py:115} INFO - [2024-03-18 22:36:39,580] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:41,063] {processor.py:651} INFO - DAG(s) dict_keys(['ingestar_data']) retrieved from /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:41,079] {logging_mixin.py:115} INFO - [2024-03-18 22:36:41,078] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:36:41,093] {logging_mixin.py:115} INFO - [2024-03-18 22:36:41,093] {dag.py:2972} INFO - Setting next_dagrun for ingestar_data to 2024-03-17T22:36:41.093121+00:00, run_after=2024-03-18T22:36:41.093121+00:00
+[2024-03-18 22:36:41,107] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas.py took 1.532 seconds
+[2024-03-18 22:36:51,223] {processor.py:153} INFO - Started process (PID=275) to work on /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:51,225] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas.py for tasks to queue
+[2024-03-18 22:36:51,226] {logging_mixin.py:115} INFO - [2024-03-18 22:36:51,226] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:52,793] {processor.py:651} INFO - DAG(s) dict_keys(['ingestar_data']) retrieved from /opt/airflow/dags/tareas.py
+[2024-03-18 22:36:52,807] {logging_mixin.py:115} INFO - [2024-03-18 22:36:52,807] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:36:52,822] {logging_mixin.py:115} INFO - [2024-03-18 22:36:52,822] {dag.py:2972} INFO - Setting next_dagrun for ingestar_data to 2024-03-17T22:36:52.822432+00:00, run_after=2024-03-18T22:36:52.822432+00:00
+[2024-03-18 22:36:52,836] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas.py took 1.616 seconds
+[2024-03-18 22:37:03,320] {processor.py:153} INFO - Started process (PID=287) to work on /opt/airflow/dags/tareas.py
+[2024-03-18 22:37:03,321] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas.py for tasks to queue
+[2024-03-18 22:37:03,322] {logging_mixin.py:115} INFO - [2024-03-18 22:37:03,322] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas.py
+[2024-03-18 22:37:04,855] {processor.py:651} INFO - DAG(s) dict_keys(['ingestar_data']) retrieved from /opt/airflow/dags/tareas.py
+[2024-03-18 22:37:04,873] {logging_mixin.py:115} INFO - [2024-03-18 22:37:04,872] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:37:04,887] {logging_mixin.py:115} INFO - [2024-03-18 22:37:04,887] {dag.py:2972} INFO - Setting next_dagrun for ingestar_data to 2024-03-17T22:37:04.887383+00:00, run_after=2024-03-18T22:37:04.887383+00:00
+[2024-03-18 22:37:04,904] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas.py took 1.587 seconds

@@ -1,0 +1,102 @@
+[2024-03-18 22:35:28,197] {processor.py:153} INFO - Started process (PID=179) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 22:35:28,198] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 22:35:28,198] {logging_mixin.py:115} INFO - [2024-03-18 22:35:28,198] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:35:30,584] {logging_mixin.py:115} INFO - [2024-03-18 22:35:30,578] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 44, in <module>
+    task_1 >> task_2 >> task_3
+NameError: name 'task_3' is not defined
+[2024-03-18 22:35:30,591] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:35:30,603] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 2.409 seconds
+[2024-03-18 22:35:40,721] {processor.py:153} INFO - Started process (PID=191) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 22:35:40,722] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 22:35:40,723] {logging_mixin.py:115} INFO - [2024-03-18 22:35:40,723] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:35:42,248] {logging_mixin.py:115} INFO - [2024-03-18 22:35:42,235] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 44, in <module>
+    task_1 >> task_2 >> task_3
+NameError: name 'task_3' is not defined
+[2024-03-18 22:35:42,250] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:35:42,263] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.546 seconds
+[2024-03-18 22:35:52,415] {processor.py:153} INFO - Started process (PID=203) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 22:35:52,416] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 22:35:52,417] {logging_mixin.py:115} INFO - [2024-03-18 22:35:52,417] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:35:54,013] {logging_mixin.py:115} INFO - [2024-03-18 22:35:54,005] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 44, in <module>
+    task_1 >> task_2 >> task_3
+NameError: name 'task_3' is not defined
+[2024-03-18 22:35:54,015] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:35:54,029] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.616 seconds
+[2024-03-18 22:36:04,170] {processor.py:153} INFO - Started process (PID=215) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:04,171] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 22:36:04,172] {logging_mixin.py:115} INFO - [2024-03-18 22:36:04,172] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:05,841] {logging_mixin.py:115} INFO - [2024-03-18 22:36:05,830] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/tareas2.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/tareas2.py", line 44, in <module>
+    task_1 >> task_2 >> task_3
+NameError: name 'task_3' is not defined
+[2024-03-18 22:36:05,843] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:05,856] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.689 seconds
+[2024-03-18 22:36:13,959] {processor.py:153} INFO - Started process (PID=227) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:13,960] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 22:36:13,961] {logging_mixin.py:115} INFO - [2024-03-18 22:36:13,961] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:15,485] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:15,569] {logging_mixin.py:115} INFO - [2024-03-18 22:36:15,569] {manager.py:508} INFO - Created Permission View: can delete on DAG:opcion_2
+[2024-03-18 22:36:15,580] {logging_mixin.py:115} INFO - [2024-03-18 22:36:15,580] {manager.py:508} INFO - Created Permission View: can read on DAG:opcion_2
+[2024-03-18 22:36:15,592] {logging_mixin.py:115} INFO - [2024-03-18 22:36:15,592] {manager.py:508} INFO - Created Permission View: can edit on DAG:opcion_2
+[2024-03-18 22:36:15,594] {logging_mixin.py:115} INFO - [2024-03-18 22:36:15,593] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:36:15,602] {logging_mixin.py:115} INFO - [2024-03-18 22:36:15,602] {dag.py:2439} INFO - Creating ORM DAG for opcion_2
+[2024-03-18 22:36:15,610] {logging_mixin.py:115} INFO - [2024-03-18 22:36:15,610] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-17T22:36:15.609958+00:00, run_after=2024-03-18T22:36:15.609958+00:00
+[2024-03-18 22:36:15,635] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.679 seconds
+[2024-03-18 22:36:25,776] {processor.py:153} INFO - Started process (PID=245) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:25,777] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 22:36:25,778] {logging_mixin.py:115} INFO - [2024-03-18 22:36:25,778] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:27,263] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:27,270] {logging_mixin.py:115} INFO - [2024-03-18 22:36:27,269] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:36:27,288] {logging_mixin.py:115} INFO - [2024-03-18 22:36:27,288] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 22:36:27,308] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.534 seconds
+[2024-03-18 22:36:37,475] {processor.py:153} INFO - Started process (PID=257) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:37,476] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 22:36:37,477] {logging_mixin.py:115} INFO - [2024-03-18 22:36:37,477] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:39,042] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:39,048] {logging_mixin.py:115} INFO - [2024-03-18 22:36:39,048] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:36:39,063] {logging_mixin.py:115} INFO - [2024-03-18 22:36:39,063] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 22:36:39,077] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.605 seconds
+[2024-03-18 22:36:49,199] {processor.py:153} INFO - Started process (PID=269) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:49,200] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 22:36:49,201] {logging_mixin.py:115} INFO - [2024-03-18 22:36:49,201] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:50,789] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:36:50,821] {logging_mixin.py:115} INFO - [2024-03-18 22:36:50,820] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:36:50,846] {logging_mixin.py:115} INFO - [2024-03-18 22:36:50,846] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 22:36:50,866] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.670 seconds
+[2024-03-18 22:37:00,964] {processor.py:153} INFO - Started process (PID=281) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 22:37:00,965] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 22:37:00,966] {logging_mixin.py:115} INFO - [2024-03-18 22:37:00,966] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:37:02,518] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:37:02,529] {logging_mixin.py:115} INFO - [2024-03-18 22:37:02,529] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:37:02,543] {logging_mixin.py:115} INFO - [2024-03-18 22:37:02,543] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 22:37:02,560] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.598 seconds
+[2024-03-18 22:37:03,605] {processor.py:153} INFO - Started process (PID=291) to work on /opt/airflow/dags/tareas2.py
+[2024-03-18 22:37:03,605] {processor.py:641} INFO - Processing file /opt/airflow/dags/tareas2.py for tasks to queue
+[2024-03-18 22:37:03,606] {logging_mixin.py:115} INFO - [2024-03-18 22:37:03,606] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:37:05,132] {processor.py:651} INFO - DAG(s) dict_keys(['opcion_2']) retrieved from /opt/airflow/dags/tareas2.py
+[2024-03-18 22:37:05,146] {logging_mixin.py:115} INFO - [2024-03-18 22:37:05,146] {dag.py:2420} INFO - Sync 1 DAGs
+[2024-03-18 22:37:05,168] {logging_mixin.py:115} INFO - [2024-03-18 22:37:05,168] {dag.py:2972} INFO - Setting next_dagrun for opcion_2 to 2024-03-18T22:36:15.609958+00:00, run_after=2024-03-19T22:36:15.609958+00:00
+[2024-03-18 22:37:05,194] {processor.py:161} INFO - Processing /opt/airflow/dags/tareas2.py took 1.592 seconds
