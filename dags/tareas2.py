@@ -45,8 +45,3 @@ task_3= PythonOperator(
     provide_context=True
 )
 task_1 >> task_2 >> task_3
-
-
-
-
-task_1 >> task_2 
